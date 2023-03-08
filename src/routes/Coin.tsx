@@ -1,13 +1,13 @@
+import { Helmet } from 'react-helmet-async';
 import { useQuery } from 'react-query';
-import { Helmet } from 'react-helmet';
 import {
-  Switch,
+  Link,
   Route,
+  Switch,
   useLocation,
   useParams,
   useRouteMatch,
 } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { fetchCoinInfo, fetchCoinTickers } from '../api';
 import Chart from './Chart';
